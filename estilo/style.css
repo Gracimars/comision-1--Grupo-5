@@ -1,0 +1,681 @@
+/* Estilos generales y fuentes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  background-color: #e7c8b3;
+}
+
+header {
+  background-color: #c77f7b;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f2f1df;
+}
+
+.nav-links {
+  list-style: none;
+  display: none; /* Esconder el menú por defecto */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-open {
+  display: flex;
+  /* Mostrar el menú cuando se active */
+}
+
+header nav ul li {
+  margin: 10px 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: 700;
+  color: #f2f1df;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  background-color: #ffadad;
+  border-radius: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.mainTitle {
+  margin: 30px 0;
+}
+
+.org {
+  font-weight: bold;
+}
+
+section {
+  margin: 20px 0;
+}
+
+/* Estilos para la sección del index */
+.banner {
+  background: url("../recursos/unmask.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* Ajusta la altura según sea necesario */
+  border-radius: 20px;
+  overflow: hidden;
+  /* Asegura que el contenido siga la curvatura del borde */
+  margin: 20px;
+}
+
+.banner-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #ffadad;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background-color: #e77b7b;
+}
+
+.intro {
+  background-color: #c77f7b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f2f1df;
+}
+
+.statistics {
+  background-color: #e7c8b3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background-color: #c77f7b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f2f1df;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.types {
+  background-color: #e7c8b3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.types-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.type {
+  background-color: #c77f7b;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  color: #f2f1df;
+  flex: 1 1 200px;
+}
+
+.type img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  background-color: #f2f1df;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.testimonial {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cta {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #f2f1df;
+}
+
+.footer {
+  width: 100%;
+  background-color: #6557a4;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+}
+
+.footerLogoImg {
+  width: 100%;
+  max-width: 347px;
+  height: auto;
+  margin: 0px 10px 10px 10px;
+}
+
+.footerTex {
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+  padding: 5px 5px 0px 5px;
+  font-weight: bolder;
+  font-size: small;
+}
+
+/* Estilos para la sección psicológica */
+
+.seccionIntro,
+.seccionNarcisismo,
+.seccionPsicopatia {
+  background-color: #c77f7b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f2f1df;
+  text-align: center;
+  flex: 1 1 200px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.seccionIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-content {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.texto {
+  margin-top: 10px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.imgViolenciaP {
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para la sección de Señales de Alerta */
+.sectionContent {
+  padding: 20px;
+}
+
+.textImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.imgContent {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.violenciaContainer {
+  background-color: #c77f7b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f2f1df;
+  margin: 20px 0;
+}
+
+.signosEjemplos {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.listaViolencia {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listaViolencia li {
+  margin: 10px 0;
+}
+
+.ciclosTitle {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.tituloAyuda {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos seccion esterotipos*/
+.estereotiposImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.introP {
+  margin: 10px;
+}
+
+/* Grid para la sección de estereotipos */
+.estereotipos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.estereotipos-grid > div {
+  background-color: #f2f1df;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Grid para las imágenes de conclusión */
+.conclusion-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rolesImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/*Estilos para la seccion Acerca de Nosotras*/
+.presentacionNosotras {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+  margin: 50px;
+}
+
+/*Style para todos los div (a excepción del primero) del section presentaciónNosotras*/
+.presentacionNosotras div {
+  background-color: #c77f7b;
+  text-align: left;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/*Style para el primer div del section presentaciónNosotras*/
+.presentacionNosotras div:first-child {
+  background-color: #f2f1df;
+}
+
+/*Style de la frase de Obama*/
+.fraseNosotras {
+  background-color: #f2f1df;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 10px;
+  color: black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/*Style para la imagen de ¿Por qué hacemos esto?*/
+.imgNosotras {
+  display: none; /*Oculta la imagen en dispositivos móviles*/
+}
+
+/*Style de ¿Por qué hacemos esto?*/
+.nosotrasObjetivo {
+  background-color: #c77f7b;
+  text-align: left;
+  border-radius: 10px;
+  text-align: left;
+  margin: 50px;
+  padding: 10px;
+}
+
+/* Media Queries */
+
+/* Estilos para tablet */
+@media (min-width: 620px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none; /* Ocultar el botón del menú en pantallas más grandes */
+  }
+
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Sección Psicológica */
+  .seccionIntro {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-content {
+    max-width: 50%;
+  }
+
+  .imgViolenciaP {
+    max-width: 45%;
+  }
+
+  /* Sección Señales de Alerta */
+  .textImageContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .imgContent,
+  .mainText {
+    max-width: 45%;
+  }
+
+  .listaViolencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /*SECCION ESTEREOTIPOS*/
+  .estereotipos-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .estereotipos-grid > div {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .conclusion-grid {
+    flex-direction: row;
+  }
+
+  .rolesImg {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+  }
+}
+
+/* Large tablets & laptops (min-width: 960px) */
+@media (min-width: 960px) {
+  main {
+    /* Header y navegación */
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none; /* Ocultar el botón del menú en pantallas grandes */
+  }
+
+  .banner {
+    height: 130vh;
+  }
+
+  /* Sección Psicológica */
+  .mainText {
+    text-align: left;
+  }
+
+  .seccionIntro {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-content {
+    max-width: 50%;
+  }
+
+  .imgViolenciaP {
+    max-width: 45%;
+  }
+
+  /* Sección de Estadísticas y Tipos de Violencia */
+  .stats-container {
+    flex-direction: row;
+  }
+
+  .types-container {
+    flex-direction: row;
+  }
+
+  /* Footer */
+
+  .footerLogo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Sección Señales de Alerta */
+  .textImageContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgContent,
+  .mainText {
+    max-width: 45%;
+  }
+
+  .listaViolencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /*SECCIÓN ESTEREOTIPOS*/
+  .estereotipos-grid > div {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+
+  .conclusion-grid {
+    justify-content: space-between;
+  }
+
+  .rolesImg {
+    max-width: 45%;
+  }
+
+  /*Sección Acerca de nosotras*/
+  .presentacionNosotras {
+    grid-template-columns: 1fr;
+  }
+  .presentacionNosotras div:first-child {
+    grid-column: 1 / 4;
+  }
+  .nosotrasObjetivo {
+    background-color: #c77f7b;
+  }
+  .imgNosotras {
+    display: block;
+    border-radius: 10px;
+    margin-left: auto; /*Centra la imágen*/
+    margin-right: auto; /*Centra la imágen*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 0;
+  }
+  .pCotynosotras {
+    padding-top: 65px;
+  }
+}
+
+/* Estilos para PC */
+@media (min-width: 1200px) {
+  /* Header y navegación */
+  main {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    height: 140vh; /* Ajusta la altura según sea necesario */
+  }
+
+  /* Sección de Estadísticas y Tipos de Violencia */
+  .stats-container {
+    flex-direction: row;
+  }
+
+  .types-container {
+    flex-direction: row;
+  }
+
+  /* Sección Psicológica */
+  .mainText,
+  .texto {
+    text-align: left;
+  }
+
+  .seccionIntro {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-content {
+    max-width: 50%;
+  }
+
+  .imgViolenciaP {
+    max-width: 45%;
+  }
+
+  /* Sección Señales de Alerta */
+  .textImageContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .imgContent,
+  .mainText {
+    max-width: 45%;
+  }
+
+  .listaViolencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /*SECCIÓN ESTEREOTIPOS*/
+  .estereotipos-grid > div {
+    flex: 1 1 calc(25% - 20px);
+  }
+
+  .conclusion-grid {
+    justify-content: space-between;
+  }
+
+  .rolesImg {
+    max-width: 45%;
+  }
+}

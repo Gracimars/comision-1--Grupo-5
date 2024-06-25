@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo/style.css" />
+    <title>Señales de Alerta</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="../index.html">¿Qué es la violencia?</a></li>
+          <li><a href="./psicologica.html">Violencia Psicológica</a></li>
+          <li><a href="alerta.html">Señales de Alerta</a></li>
+          <li><a href="./estereotipos.html">Rompiendo Estereotipos</a></li>
+          <li><a href="./nosotras.html">Acerca de Nosotras</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="mainTitle">
+        <h1>SEÑALES DE ALERTA</h1>
+      </div>
+      <div class="cta">
+        <h2>Detectemos los primeros signos de la violencia</h2>
+        <h3>
+          Si crees que estás en situación de violencia, puedes llamar a la línea
+          de contención 144. Las 24hs, los 365 días del año.
+        </h3>
+      </div>
+      <section class="sectionContent">
+        <!-- Signos de Violencia -->
+        <div class="violenciaContainer">
+          <h3 class="signosEjemplos">Signos de violencia "invisibles":</h3>
+          <ul class="listaViolencia">
+            <li>
+              No expresas tus opiniones libremente por miedo a la reacción de
+              otra persona
+            </li>
+            <li>Te muestran celos frecuentemente y/o te revisan el celular</li>
+            <li>
+              Has dejado de salir con tu círculo de amistades porque a otra
+              persona “no le caen bien”
+            </li>
+            <li>Te aíslan de familiares y/o amistades</li>
+            <li>Ignoran o desprecian tus sentimientos con frecuencia</li>
+            <li>Te controlan el dinero y toman las decisiones por ti</li>
+          </ul>
+        </div>
+
+        <div class="violenciaContainer">
+          <h3 class="signosEjemplos">Signos de violencia más visibles:</h3>
+          <ul class="listaViolencia">
+            <li>Te humillan, gritan o insultan en privado o en público</li>
+            <li>
+              "Juego" de manos: pellizcones, tirones de pelo, empujones, patadas
+              o cachetazos aunque sean "jugando"
+            </li>
+            <li>Amenazan con hacerte daño a ti o a tu familia</li>
+            <li>Te han agredido alguna vez físicamente</li>
+            <li>
+              Te han forzado a mantener relaciones sexuales en contra de tu
+              voluntad
+            </li>
+            <li>Amenazan con quitarte a tus hijos/as en caso de dejarlo</li>
+          </ul>
+        </div>
+
+        <!-- Ciclos de la Violencia -->
+        <h2 class="ciclosTitle">Ciclos de la Violencia</h2>
+        <div class="textImageContainer">
+          <img
+            class="imgContent"
+            src="../recursos/ciclos-violencia.jpg"
+            alt="Ciclos de la violencia."
+          />
+          <p class="mainText">
+            El ciclo de la violencia es una herramienta que te ayuda a detectar
+            si estás viviendo una situación de riesgo en tu relación de pareja.
+            Las fases del ciclo en cada caso pueden variar en tiempo e
+            intensidad; a mayor tiempo, más cortos se vuelven los ciclos.
+          </p>
+        </div>
+
+        <!-- Nuevas Secciones -->
+        <div class="violenciaContainer">
+          <h3 class="signosEjemplos">Signos de violencia en el trabajo:</h3>
+          <ul class="listaViolencia">
+            <li>Te asignan tareas que no te corresponden y son humillantes</li>
+            <li>Te ignoran en reuniones importantes</li>
+            <li>Recibes comentarios despectivos o humillantes</li>
+          </ul>
+        </div>
+
+        <div class="violenciaContainer">
+          <h3 class="signosEjemplos">
+            Signos de violencia en el entorno escolar:
+          </h3>
+          <ul class="listaViolencia">
+            <li>Te acosan físicamente o verbalmente</li>
+            <li>Te excluyen de actividades grupales</li>
+            <li>Recibes amenazas o intimidaciones</li>
+          </ul>
+        </div>
+
+        <!--         <div class="cta>
+          <p>Todas las líneas son gratuitas y confidenciales:</p>
+          <ul class="listaViolencia">
+            <li>
+              * Si sufrís violencia familiar y/o sexual, o grooming llamá a la
+              Línea 137 opción 1.
+            </li>
+            <li>* Si estás en una situación de violencia, llama al 144.</li>
+            <li>
+              * Si sos niño/a, adolescente, docente o familiar y ves violencia a
+              menores, puedes llamar al 102.
+            </li>
+            <li>
+              * Puedes llamar al 145 por desaparición de una persona ante una
+              posible situación de trata.
+            </li>
+          </ul>
+        </div> -->
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footerLogo">
+          <p class="footerTex">
+            Este sitio fue diseñado y desarrollado exclusivamente por
+            estudiantes de <span class="org">Ingenias+</span>
+          </p>
+          <img
+            class="footerLogoImg"
+            src="https://www.educarenigualdad.org/wp-content/uploads/2022/07/Asesoramiento-suscripcion-recurso-1.png"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("nav-open");
+        });
+    </script>
+  </body>
+</html>

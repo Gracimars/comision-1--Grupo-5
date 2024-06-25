@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo/style.css" />
+    <title>Concientización sobre la violencia</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="./secciones/psicologica.html">Violencia Psicológica</a>
+          </li>
+          <li><a href="./secciones/alerta.html">Señales de Alerta</a></li>
+          <li>
+            <a href="./secciones/estereotipos.html">Rompiendo Estereotipos</a>
+          </li>
+          <li><a href="./secciones/nosotras.html">Acerca de Nosotras</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="mainTitle">
+        <h1>DESENMASCARANDO LA VIOLENCIA</h1>
+      </div>
+      <!-- Banner Principal -->
+      <section class="banner">
+        <div class="banner-content">
+          <h2>La clave: Detectar a tiempo para evitar</h2>
+          <button class="cta-button">Conoce más</button>
+        </div>
+      </section>
+
+      <!-- Introducción -->
+      <section class="intro">
+        <h2>¿Qué es la violencia?</h2>
+        <p>
+          La violencia es el uso intencional de la fuerza o poder que causa daño
+          físico o psicológico <span class="org">(OMS)</span>. La violencia
+          contra mujeres y niñas es una violación de derechos humanos con graves
+          consecuencias.
+        </p>
+      </section>
+
+      <!-- Estadísticas -->
+      <section class="statistics">
+        <h2>Estadísticas Impactantes</h2>
+        <div class="stats-container">
+          <div class="stat">
+            <h3>1 de cada 3</h3>
+            <p>Mujeres ha sufrido violencia física o sexual.</p>
+          </div>
+          <div class="stat">
+            <h3>58%</h3>
+            <p>De las víctimas de violencia nunca buscan ayuda.</p>
+          </div>
+          <div class="stat">
+            <h3>82%</h3>
+            <p>De las víctimas no denuncian a su agresor.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tipos de violencia -->
+      <section class="types">
+        <h2>Tipos de Violencia</h2>
+        <div class="types-container">
+          <div class="type">
+            <h4>Violencia Económica</h4>
+            <p>Control total sobre los recursos financieros de la víctima.</p>
+          </div>
+          <div class="type">
+            <h4>Violencia Emocional</h4>
+            <p>Intimidación, amenazas y maltrato psicológico.</p>
+          </div>
+          <div class="type">
+            <h4>Violencia Física</h4>
+            <p>Daños físicos a la víctima mediante golpes, patadas, etc.</p>
+          </div>
+          <div class="type">
+            <h4>Violencia Sexual</h4>
+            <p>Acto sexual sin consentimiento de la víctima.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+          <p>
+            "Gracias a este sitio, pude reconocer las señales de alerta y buscar
+            ayuda a tiempo."
+          </p>
+          <h4>- Anónima</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Aprendí mucho sobre cómo prevenir y actuar ante situaciones de
+            violencia."
+          </p>
+          <h4>- Pedro G.</h4>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta">
+        <h2>¡Involúcrate!</h2>
+        <p>
+          Aprende más, comparte información y ayuda a prevenir la violencia.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footerLogo">
+          <p class="footerTex">
+            Este sitio fue diseñado y desarrollado exclusivamente por
+            estudiantes de <span class="org">Ingenias+</span>
+          </p>
+          <img
+            class="footerLogoImg"
+            src="https://www.educarenigualdad.org/wp-content/uploads/2022/07/Asesoramiento-suscripcion-recurso-1.png"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("nav-open");
+        });
+    </script>
+  </body>
+</html>

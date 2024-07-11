@@ -12,4 +12,5 @@ Esta carpeta contiene la primera pre entrega para el curso de Ingenias+ Desarrol
 
 ## Descripción
 
-Somos el grupo número 5 de la comisión 1. En esta primera pre entrega, hemos trabajado en [breve descripción del proyecto o tarea entregada, si deseas agregar más detalles].
+Somos el grupo número 5 de la comisión 1.
+Curso de Desarrollo Web Frontend ´INGENIAS+!´

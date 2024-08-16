@@ -105,6 +105,61 @@
             <li>Recibes amenazas o intimidaciones</li>
           </ul>
         </div>
+        <section>
+          <h3 class="mainTitle cta">
+            Hagamos una simulación de una situación violenta
+          </h3>
+          <div>
+            <label for="buscar" class="buscar">Buscar Caso</label>
+            <input
+              required
+              type="text"
+              id="buscar"
+              placeholder="Buscar por descripción, contexto, etc"
+            />
+            <button class="btn-caso" onclick="buscarCasos()">Buscar</button>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="agregarCaso">Agregar Nuevo Caso</h3>
+          <form class="formCaso" id="formCaso" onsubmit="agregarCaso(event)">
+            <div class="form-group">
+              <label for="tipo">Tipo de Violencia:</label>
+              <input
+                required
+                type="text"
+                id="tipo"
+                placeholder="Ej. Violencia Física"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contexto">Contexto del Caso:</label>
+              <input
+                required
+                id="contexto"
+                placeholder="Ej. Hogar, Familiar, Escolar, Laboral"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="descripcion">Descripción del Caso:</label>
+              <textarea
+                required
+                id="descripcion"
+                placeholder="Detalles del caso..."
+                class="form-control"
+              ></textarea>
+            </div>
+            <button type="submit" id="agregar" class="btn-caso">Agregar</button>
+          </form>
+        </section>
+
+        <section>
+          <h3 class="listaCasos">Casos Registrados</h3>
+          <div id="datos"></div>
+        </section>
 
         <!--         <div class="cta>
           <p>Todas las líneas son gratuitas y confidenciales:</p>

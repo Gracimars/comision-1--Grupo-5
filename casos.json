@@ -1,0 +1,16 @@
+{
+  "casos": [
+    {
+      "id": 1,
+      "tipo": "Violencia Económica",
+      "contexto": "Hogar",
+      "descripcion": "El agresor controla el dinero de la víctima."
+    },
+    {
+      "id": 2,
+      "tipo": "Violencia Psicológica",
+      "contexto": "Trabajo",
+      "descripcion": "La víctima se siente aislada de sus amigos y familia."
+    }
+  ]
+}

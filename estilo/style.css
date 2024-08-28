@@ -424,6 +424,43 @@ section {
   padding: 10px;
 }
 
+.formCaso {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn-caso {
+  background-color: #c77f7b;
+  border: none;
+  padding: 10px 20px;
+  color: #f2f1df;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.btn-caso:hover {
+  background-color: #ffadad;
+}
+
+.agregarCaso,
+.listaCasos {
+  margin: 40px 0;
+}
+
+#datos {
+  border: 1px solid #c77f7b;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-width: medium;
+}
+
 /* Media Queries */
 
 /* Estilos para tablet */

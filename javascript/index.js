@@ -1,6 +1,4 @@
-let dataCasos = []; // Defino esta variable para almacenar los casos.
-
-document.addEventListener("load", cargarDatos());
+document.addEventListener("load", cargarDatos(), obtenerDatos());
 
 // Navbar acordeón
 document.querySelector(".menu-toggle").addEventListener("click", function () {
@@ -34,7 +32,12 @@ function mostrarCasos(arrayCasos) {
 
   if (!arrayCasos || arrayCasos.length === 0) {
     const casoDiv = document.createElement("div");
-    casoDiv.innerHTML = `<p>Sin registro de casos.</p>`;
+    casoDiv.innerHTML = `
+                    <h3 class="casosSubtitulos">Caso ${caso.id} (${caso.tipo})</h3>
+                    <p>Contexto: ${caso.contexto}</p>
+                    <p>Descripción:${caso.descripcion}</p>
+                    <button class="btn-caso" onclick="eliminarCaso(${caso.id})">Eliminar</button>
+                `;
     $datosDiv.appendChild(casoDiv);
   } else {
     arrayCasos.forEach((caso) => {
@@ -70,7 +73,7 @@ function agregarCaso(event) {
     guardarEnStorage(dataCasos);
   }
 }
-//Funcion para eliminar un caso (esta función no la entiendo)
+
 function eliminarCaso(id) {
   dataCasos = dataCasos.filter((caso) => caso.id != id);
   guardarEnStorage(dataCasos);
@@ -79,4 +82,37 @@ function eliminarCaso(id) {
 function guardarEnStorage(dataCasos) {
   localStorage.setItem("casos", JSON.stringify(dataCasos));
   mostrarCasos(dataCasos);
+}
+
+//API
+// Función para obtener los datos de la API
+function obtenerDatos() {
+  return fetch(
+    "http://localhost:8080/" +
+      "https://www.cultura.gob.ar/api/v2.0/organismos/?format=json"
+  )
+    .then((response) => response.json())
+    .then((data) => mostrarDatos(data.results))
+    .catch((error) => console.error("Error al obtener los datos:", error));
+}
+
+// Función para mostrar los datos en el DOM
+function mostrarDatos(datos) {
+  const lista = document.getElementById("lista-datos");
+
+  datos.forEach((dato) => {
+    const item = document.createElement("li");
+
+    // Crear el contenido del item con el nombre, dirección, teléfono y un enlace
+    item.innerHTML = `
+      <h3>${dato.nombre}</h3>
+      <p>Dirección: ${dato.direccion}</p>
+      <p>Teléfono: ${dato.telefono}</p>
+      <p>Email: <a href="mailto:${dato.email}">${dato.email}</a></p>
+      <p><a href="${dato.link}" target="_blank">Más información</a></p>
+    `;
+
+    // Agregar el item a la lista
+    lista.appendChild(item);
+  });
 }

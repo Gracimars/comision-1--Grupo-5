@@ -64,6 +64,17 @@ function agregarCaso(event) {
   }
 }
 
+//Funcion para eliminar un caso (esta función no la entiendo)
+function eliminarCaso(id) {
+  dataCasos = dataCasos.filter((caso) => caso.id != id);
+  guardarEnStorage(dataCasos);
+}
+
+function guardarEnStorage(dataCasos) {
+  localStorage.setItem("casos", JSON.stringify(dataCasos));
+  mostrarCasos(dataCasos);
+}
+
 //API
 // Función para obtener los datos de la API
 function obtenerDatos() {
@@ -74,17 +85,6 @@ function obtenerDatos() {
     .then((response) => response.json())
     .then((data) => mostrarDatos(data.results))
     .catch((error) => console.error("Error al obtener los datos:", error));
-}
-
-//Funcion para eliminar un caso (esta función no la entiendo)
-function eliminarCaso(id) {
-  dataCasos = dataCasos.filter((caso) => caso.id != id);
-  guardarEnStorage(dataCasos);
-}
-
-function guardarEnStorage(dataCasos) {
-  localStorage.setItem("casos", JSON.stringify(dataCasos));
-  mostrarCasos(dataCasos);
 }
 
 // Función para mostrar los datos en el DOM
